@@ -1,15 +1,17 @@
 <idea-plugin version="2">
   <id>com.meredith.intellij.plugins.openinclude</id>
   <name>Open Includes</name>
-  <version>1.0</version>
-  <vendor email="todd.breiholz@meredith.com" url="http://www.meredith.com">Meredith Corporation</vendor>
+  <version>1.0.1</version>
+  <vendor email="talanb@gmail.com" url="http://www.meredith.com">Todd Breiholz</vendor>
   <depends>com.intellij.jsp</depends>
+  <depends>com.intellij.modules.java</depends>
   <description><![CDATA[
       Allow Ctrl-Click navigation in JSP files for other include tags (dsp, cq)
     ]]></description>
 
   <change-notes><![CDATA[
-1.0 - Initial release
+1.0.1 - Restrict to IntelliJ IDEA
+1.0   - Initial release
 
     ]]>
   </change-notes>
@@ -17,13 +19,6 @@
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
   <!-- since 15.0 -->
   <idea-version since-build="143"/>
-
-  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
-       on how to target different products -->
-  <!-- uncomment to enable plugin in all products
-  <depends>com.intellij.modules.lang</depends>
-  -->
-
 
   <extensionPoints>
   <extensionPoint name="pathReferenceProvider"
